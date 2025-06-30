@@ -3,6 +3,7 @@ export default {
   description: "An awesome docs template built by me",
   lang: 'en-US',
   cleanUrls: true,
+  base: '/imdb-serverless-etl-docs/',
   // If this is disabled, when building it it will give deadlink errors if your markdown has the wrong links
   ignoreDeadLinks: true,
   
