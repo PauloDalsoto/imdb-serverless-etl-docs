@@ -36,46 +36,55 @@ export default {
         collapsible: false,
         items: [
           { text: "Overview", link: "/guide/overview" },
-          { text: "Architecture", link: "/guide/architecture" },
+          {
+              text: 'Architecture',
+              collapsed: false,
+              items: [
+                { text: 'Simple Architecture', link: '/guide/architecture/simple' },
+                { text: 'Feature Evolution & Value', link: '/guide/architecture/evolution' },
+                { text: 'Final Architecture', link: '/guide/architecture/final' }
+              ]
+            },
           { text: "Deployment", link: "/guide/deployment" },
           { text: "SAM Config", link: "/guide/sam-config" },
         ],
       },
       {
-        text: "Components",
+        text: "Project Components",
         collapsible: true,
         items: [
-          { text: "Lambda Functions", link: "/components/lambda-functions" },
-          { text: "SQS Queue", link: "/components/sqs" },
-          { text: "EventBridge", link: "/components/eventbridge" },
-          { text: "S3 Bucket", link: "/components/s3" },
+          { text: "AWS IAM", link: "/components/secrets" },
           { text: "Secrets Manager", link: "/components/secrets" },
+          { text: "S3 Buckets", link: "/components/s3" },
+          {
+              text: 'Lambda Functions',
+              collapsed: false,
+              items: [
+                { text: 'GetMoviesAndSendToQueue', link: '/guide/architecture/simple' },
+                { text: 'EnrichAndStoreMovie', link: '/guide/architecture/evolution' },
+                { text: 'ProcessBronzeToSilver', link: '/guide/architecture/final' },
+                { text: 'ProcessSilverToGold', link: '/guide/architectures/final' }
+              ]
+          },
+          { text: "AWS SQS", link: "/components/sqs" },
+          { text: "EventBridge", link: "/components/eventbridge" },
+          { text: "QuickSight", link: "/components/secrets" },
         ],
       },
       {
         text: "Project Aspects",
         collapsible: true,
         items: [
-          { text: "Logging", link: "/aspects/logging" },
-          { text: "Error Handling", link: "/aspects/error-handling" },
-          {
-            text: "Medallion Architecture",
-            link: "/aspects/medallion-architecture",
-          },
-          { text: "Triggers", link: "/aspects/triggers" },
-          { text: "Infrastructure as Code", link: "/aspects/iac" },
-          {
-            text: "Private Key Handling",
-            link: "/aspects/private-key-handling",
-          },
+          { text: "Infrastructure as Code (IaC)", link: "/aspects/iac" },
+          { text: "Medallion Architecture", link: "/aspects/medallion-architecture" },
+          { text: "Event Triggers", link: "/aspects/triggers" },
+          { text: "Logging Strategy", link: "/aspects/logging" },
+          { text: "Error Handling & Fault Tolerance", link: "/aspects/error-handling" },
+          { text: "Automated Testing", link: "/aspects/testing" },
+          { text: "Documentation", link: "/aspects/documentation" },
         ],
-      },
+      }
     ],
-
-    docFooter: {
-      prev: false,
-      next: false,
-    },
 
     footer: {
       message: "Released under the MIT License.",
