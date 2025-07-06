@@ -16,12 +16,12 @@ This documentation repository serves as the main documentation hub for the [IMDb
 - **Project Aspects** - Documentation, testing, logging, and error handling
 - **Usage Instructions** - How to run and monitor the ETL pipeline
 
-## 🚀 Live Demo
+## Live Demo
 
 The documentation is already live and accessible at:
 **[https://paulodalsoto.github.io/imdb-serverless-etl-docs/](https://paulodalsoto.github.io/imdb-serverless-etl-docs/)**
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before running this documentation site locally, ensure you have:
 
@@ -29,7 +29,7 @@ Before running this documentation site locally, ensure you have:
 - **npm** or **yarn** package manager
 - **Git** for cloning the repository
 
-## 🛠️ Getting Started
+## Getting Started
 
 ### Clone the Repository
 
@@ -54,23 +54,7 @@ npm run docs:dev
 
 The documentation site will be available at `http://localhost:5173`
 
-### Build for Production
-
-To build the documentation for production:
-
-```bash
-npm run docs:build
-```
-
-### Preview Production Build
-
-To preview the production build locally:
-
-```bash
-npm run docs:serve
-```
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 imdb-serverless-etl-docs/
@@ -92,61 +76,3 @@ imdb-serverless-etl-docs/
 ├── package.json                  # Project dependencies
 └── README.md                     # This file
 ```
-
-## 🎯 Main Project
-
-This documentation site is for the main IMDb Serverless ETL project. To explore the actual ETL pipeline implementation, visit:
-
-**[https://github.com/PauloDalsoto/imdb-serverless-etl](https://github.com/PauloDalsoto/imdb-serverless-etl)**
-
-## 🔧 Technology Stack
-
-- **[VitePress](https://vitepress.dev/)** - Static site generator
-- **[Vue.js](https://vuejs.org/)** - Frontend framework
-- **[Markdown](https://www.markdownguide.org/)** - Documentation format
-- **GitHub Pages** - Hosting platform
-
-## 📚 Documentation Sections
-
-### Architecture
-- Evolution of the architecture design
-- Final architecture overview
-- Simple architecture diagrams
-
-### Project Components
-- AWS IAM roles and policies
-- S3 bucket configurations
-- Lambda functions
-- EventBridge setup
-- SQS queues
-- QuickSight dashboards
-- AWS Secrets Manager
-
-### Project Aspects
-- Infrastructure as Code (IaC)
-- Event-driven architecture
-- Medallion architecture pattern
-- Error handling strategies
-- Logging and monitoring
-- Testing methodologies
-
-## 🤝 Contributing
-
-Contributions to improve the documentation are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## 📧 Contact
-
-For questions or suggestions about the documentation, please reach out through the main project repository or create an issue in this documentation repository.
-
-## 📄 License
-
-This documentation is part of the IMDb Serverless ETL project. Please refer to the main project repository for license information.
-
----
-
-**Built with ❤️ using VitePress**
