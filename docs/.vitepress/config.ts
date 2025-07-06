@@ -88,8 +88,8 @@ export default {
         text: "Next Steps",
         collapsible: true,
         items: [
-          { text: "CI/CD", link: "/guide/projectAspects/ai-ml" },
-          { text: "AI and Machine Learning", link: "/guide/projectAspects/ai-ml" }
+          { text: "CI/CD", link: "/guide/nextSteps/ci-cd" },
+          { text: "AI and Machine Learning", link: "/guide/nextSteps/AI" }
         ],
       }
     ],
