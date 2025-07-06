@@ -45,8 +45,18 @@
 }
 
 .custom-layout .btn {
-  background-color: var(--vp-button-brand-bg);
+  border-color: var(--vp-button-brand-border);
   color: var(--vp-button-brand-text);
+  background-color: var(--vp-button-brand-bg);
   border-radius: 20px;
   padding: 0.5rem 1.4rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.custom-layout .btn:hover {
+  background-color: var(--vp-button-brand-hover-bg);
+  border-color: var(--vp-button-brand-hover-border);
+  color: var(--vp-button-brand-hover-text);
 }

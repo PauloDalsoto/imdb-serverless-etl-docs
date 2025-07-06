@@ -38,7 +38,7 @@ export default {
           { text: "Overview", link: "/guide/overview" },
           {
               text: 'Architecture',
-              collapsed: false,
+              collapsed: true,
               items: [
                 { text: 'Simple Architecture', link: '/guide/architecture/simple' },
                 { text: 'Feature Evolution & Value', link: '/guide/architecture/evolution' },
@@ -53,35 +53,43 @@ export default {
         text: "Project Components",
         collapsible: true,
         items: [
-          { text: "AWS IAM", link: "/components/secrets" },
-          { text: "Secrets Manager", link: "/components/secrets" },
-          { text: "S3 Buckets", link: "/components/s3" },
+          { text: "AWS IAM", link: "/guide/projectComponents/aws-iam" },
+          { text: "Secrets Manager", link: "/guide/projectComponents/secretManager" },
+          { text: "AWS SQS", link: "/guide/projectComponents/aws-sqs" },
+          { text: "EventBridge", link: "/guide/projectComponents/eventBridge" },
+          { text: "S3 Buckets", link: "/guide/projectComponents/s3-buckets" },
           {
               text: 'Lambda Functions',
-              collapsed: false,
+              collapsed: true,
               items: [
-                { text: 'GetMoviesAndSendToQueue', link: '/guide/architecture/simple' },
-                { text: 'EnrichAndStoreMovie', link: '/guide/architecture/evolution' },
-                { text: 'ProcessBronzeToSilver', link: '/guide/architecture/final' },
-                { text: 'ProcessSilverToGold', link: '/guide/architectures/final' }
+                { text: 'GetMoviesAndSendToQueue', link: '/guide/projectComponents/lambdas/GetMoviesAndSendToQueue' },
+                { text: 'EnrichAndStoreMovie', link: '/guide/projectComponents/lambdas/EnrichAndStoreMovie' },
+                { text: 'ProcessBronzeToSilver', link: '/guide/projectComponents/lambdas/ProcessBronzeToSilver' },
+                { text: 'ProcessSilverToGold', link: '/guide/projectComponents/lambdas/ProcessSilverToGold' }
               ]
           },
-          { text: "AWS SQS", link: "/components/sqs" },
-          { text: "EventBridge", link: "/components/eventbridge" },
-          { text: "QuickSight", link: "/components/secrets" },
+          { text: "QuickSight", link: "/guide/projectComponents/quickSight" },
         ],
       },
       {
         text: "Project Aspects",
         collapsible: true,
         items: [
-          { text: "Infrastructure as Code (IaC)", link: "/aspects/iac" },
-          { text: "Medallion Architecture", link: "/aspects/medallion-architecture" },
-          { text: "Event Triggers", link: "/aspects/triggers" },
-          { text: "Logging Strategy", link: "/aspects/logging" },
-          { text: "Error Handling & Fault Tolerance", link: "/aspects/error-handling" },
-          { text: "Automated Testing", link: "/aspects/testing" },
-          { text: "Documentation", link: "/aspects/documentation" },
+          { text: "Infrastructure as Code (IaC)", link: "/guide/projectAspects/iac" },
+          { text: "Medallion Architecture", link: "/guide/projectAspects/medallionArch" },
+          { text: "Event Triggers", link: "/guide/projectAspects/event-trigger" },
+          { text: "Logging Strategy", link: "/guide/projectAspects/logging" },
+          { text: "Error Handling", link: "/guide/projectAspects/error-handling" },
+          { text: "Automated Testing", link: "/guide/projectAspects/testing" },
+          { text: "Documentation", link: "/guide/projectAspects/documentation" },
+        ],
+      },
+      {
+        text: "Next Steps",
+        collapsible: true,
+        items: [
+          { text: "CI/CD", link: "/guide/projectAspects/ai-ml" },
+          { text: "AI and Machine Learning", link: "/guide/projectAspects/ai-ml" }
         ],
       }
     ],

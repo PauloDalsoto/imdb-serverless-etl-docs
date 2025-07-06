@@ -31,9 +31,13 @@ confirm_changeset = false
 disable_rollback = true
 
 parameter_overrides = [
-  "BronzeBucketName=imdb-etl-bronze-whoortuydmo9",
+  "maxRetries=3",
+  "baseDelaySeconds=1",
+  "BronzeBucketName=mdb-etl-bronze-whoortuydmo9",
   "SilverBucketName=imdb-etl-silver-whoortuydmo9", 
-  "GoldBucketName=imdb-etl-gold-whoortuydmo9"
+  "GoldBucketName=imdb-etl-gold-whoortuydmo9",
+  "imdbDataUrl=https://top-movies.s3.eu-central-1.amazonaws.com/Top250Movies.json",
+  "omdbApiUrl=https://www.omdbapi.com/"
 ]
 ```
 
@@ -55,10 +59,13 @@ parameter_overrides = [
 
 These parameters are defined in your `template.yaml` and are customized per deployment:
 
+- `max_retries`: Maximum number of retries for failed Lambda functions.
+- `base_delay_seconds`: Initial delay in seconds before retrying a failed Lambda function.
 - `BronzeBucketName`: Name of the S3 bucket for raw data (Bronze layer).
 - `SilverBucketName`: Name of the S3 bucket for cleaned/enriched data (Silver layer).
 - `GoldBucketName`: Name of the S3 bucket for final, ready-to-query datasets (Gold layer).
-
+- `imdbDataUrl`: URL of the IMDb data source to be processed.
+- `omdbApiUrl`: URL of the OMDb API for movie details.
 ---
 
->  **Note:** Never store sensitive data like API keys or credentials in `samconfig.toml`. Use **AWS Secrets Manager** or environment variables instead.
+>  **Note:** Never store sensitive data like API keys or credentials in `samconfig.toml`. Use **AWS Secrets Manager** instead.
