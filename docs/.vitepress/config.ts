@@ -53,9 +53,9 @@ export default {
         text: "Project Components",
         collapsible: true,
         items: [
-          { text: "AWS IAM", link: "/guide/projectComponents/aws-iam" },
+          { text: "IAM", link: "/guide/projectComponents/aws-iam" },
           { text: "Secrets Manager", link: "/guide/projectComponents/secretManager" },
-          { text: "AWS SQS", link: "/guide/projectComponents/aws-sqs" },
+          { text: "SQS", link: "/guide/projectComponents/aws-sqs" },
           { text: "EventBridge", link: "/guide/projectComponents/eventBridge" },
           { text: "S3 Buckets", link: "/guide/projectComponents/s3-buckets" },
           {

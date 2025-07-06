@@ -58,8 +58,8 @@ The documentation site will be available at `http://localhost:5173`
 
 ```
 imdb-serverless-etl-docs/
-├── docs/                          # Documentation source files
-│   ├── index.md                   # Homepage
+├── docs/                         # Documentation source files
+│   ├── index.md                  # Homepage
 │   ├── about-me.md               # About the author
 │   ├── guide/                    # Main documentation guides
 │   │   ├── overview.md           # Project overview
