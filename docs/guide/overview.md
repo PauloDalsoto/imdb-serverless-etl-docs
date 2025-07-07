@@ -52,7 +52,7 @@ Now that we understand the purpose, context, and core capabilities of the projec
 
 In the next section, we'll explore the full architecture behind the pipeline — including the serverless components, data flow, and key design decisions that power this solution.
 
-➡️ [Continue to Architecture →](/guide/architecture)
+[Continue to Architecture →](/guide/architecture/simple)
 
 
 ## References
