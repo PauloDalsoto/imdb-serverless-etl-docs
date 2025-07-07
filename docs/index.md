@@ -59,7 +59,7 @@ head:
 <div class="custom-layout">
   <h1> Welcome to the IMDb Serverless ETL Project</h1>
   <p>This project builds a fully serverless data pipeline using AWS services. It fetches the top 250 movies from IMDb, enriches them using the OMDb API, stores the results in S3, and enables visual insights — all while following cloud-native best practices.</p>
-  <img src="/images/final_arch.png" alt="IMDb Serverless ETL Diagram" style="max-width: 80%; height: auto; display: block; margin: 1px auto;">
+  <img src="/images/dash.gif" alt="IMDb Serverless ETL Diagram" style="max-width: 100%; height: auto; display: block; margin: 1px auto;">
 
   <a href="/imdb-serverless-etl-docs/guide/overview" class="btn">Read the Full Guide</a>
 </div>

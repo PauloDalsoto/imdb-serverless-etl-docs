@@ -38,7 +38,7 @@ export default {
           { text: "Overview", link: "/guide/overview" },
           {
               text: 'Architecture',
-              collapsed: true,
+              collapsed: false,
               items: [
                 { text: 'Simple Architecture', link: '/guide/architecture/simple' },
                 { text: 'Feature Evolution & Value', link: '/guide/architecture/evolution' },
@@ -51,7 +51,7 @@ export default {
       },
       {
         text: "Project Components",
-        collapsible: true,
+        collapsible: false,
         items: [
           { text: "IAM", link: "/guide/projectComponents/aws-iam" },
           { text: "Secrets Manager", link: "/guide/projectComponents/secretManager" },
@@ -60,7 +60,7 @@ export default {
           { text: "S3 Buckets", link: "/guide/projectComponents/s3-buckets" },
           {
               text: 'Lambda Functions',
-              collapsed: true,
+              collapsed: false,
               items: [
                 { text: 'GetMoviesAndSendToQueue', link: '/guide/projectComponents/lambdas/GetMoviesAndSendToQueue' },
                 { text: 'EnrichAndStoreMovie', link: '/guide/projectComponents/lambdas/EnrichAndStoreMovie' },
