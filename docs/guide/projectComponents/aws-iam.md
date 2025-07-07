@@ -46,13 +46,13 @@ EnrichAndStoreMovieLambdaRole:
 
 It provides only the permissions necessary for the function to complete its tasks:
 
-- ✅ **Write to the Bronze S3 bucket**  
+- **Write to the Bronze S3 bucket**  
   Allows storing the enriched movie data under the `/bronze/` prefix.
 
-- ✅ **Read from the SQS Queue**  
+- **Read from the SQS Queue**  
   Enables the Lambda function to receive and delete messages from the queue, and read queue metadata.
 
-- ✅ **Access the OMDb API Key securely**  
+- **Access the OMDb API Key securely**  
   Grants access to retrieve the secret `/imdb-etl/omdb-api-key` stored in AWS Secrets Manager. 
 
 ## Role Breakdown by Function

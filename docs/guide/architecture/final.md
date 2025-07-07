@@ -7,7 +7,6 @@ The final solution maintains a **serverless, event-driven design**, now extended
 
 ##  Final Architecture Diagram 
 
-<!-- Final architecture image placeholder -->
 ![Final Architecture Diagram](/images/final_arch.png)
 
 > This diagram illustrates the complete data flow: from ingestion and enrichment to layered storage, transformation, and business intelligence integration.
@@ -45,9 +44,7 @@ The original flow remains intact, now enhanced with modular downstream layers.
 
 > Each Lambda function described above operates under a dedicated IAM Role, ensuring the principle of least privilege by granting only the necessary permissions for its specific tasks within the AWS environment.
 
----
-
-## ✅ Summary of Benefits
+## Summary of Benefits
 
 This layered and modular architecture delivers:
 
