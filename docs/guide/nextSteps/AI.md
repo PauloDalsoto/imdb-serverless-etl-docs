@@ -81,7 +81,7 @@ This pattern suggests that the model's prediction accuracy decreases as movie po
 | Jason Goes to Hell: The Final Friday         | 10.341982        | 10.327849              | 0.014133       |
 | Sands of Iwo Jima                            | 3.851000         | 3.835227               | 0.015773       |
 
-- **Top 5 Worst Predictions**
+- **Top 10 Worst Predictions**
 
 | Title                                                       | Real Popularity | Predicted Popularity | Absolute Error |
 |-------------------------------------------------------------|------------------|------------------------|----------------|
