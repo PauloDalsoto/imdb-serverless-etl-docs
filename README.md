@@ -6,6 +6,8 @@
 
 Official documentation for the **IMDb Serverless ETL** project — a comprehensive AWS-based pipeline for fetching, enriching, and storing IMDb Top 250 movie data. This documentation site provides detailed installation guides, architecture overview, deployment instructions, and technical specifications.
 
+![Doc Page](docs/public/images/docPage.png)
+
 ## About
 
 This documentation repository serves as the main documentation hub for the [IMDb Serverless ETL project](https://github.com/PauloDalsoto/imdb-serverless-etl). The documentation covers:
