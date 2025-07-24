@@ -17,7 +17,6 @@ Each internal module (e.g., `IMDBService`, `OMDBService`, `S3Service`) is tested
 - Edge cases
 
 These tests do not require any external AWS resources, allowing for fast execution and quick feedback during development.
-- [View Unit Tests Folder](https://github.com/PauloDalsoto/imdb-serverless-etl/tree/main/tests/unit)
 
 ### 2. Integration Tests (Mocked)
 
@@ -28,7 +27,8 @@ Interaction between Lambda functions and AWS services is tested using the [`moto
 - Secrets Manager
 
 These tests ensure that the functions can successfully read from and write to these services without needing actual AWS resources, which speeds up testing and avoids costs.
-- [View Integration Tests Folder](https://github.com/PauloDalsoto/imdb-serverless-etl/tree/main/tests/integration)
+
+> [View Tests Folder](https://github.com/PauloDalsoto/imdb-serverless-etl/tree/main/tests)
 
 ## Tools Used
 

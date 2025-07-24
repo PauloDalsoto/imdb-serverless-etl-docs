@@ -27,7 +27,7 @@ This configuration can be adjusted via event input, making the pipeline **adapta
 
 ## Medallion Architecture: Structuring the Data Lifecycle
 
-One of the first improvements was organizing the S3 storage using the **Medallion Architecture pattern** (Bronze → Silver → Gold), which brings clarity and governance to data processing.
+One of the first improvements was organizing the S3 storage using the [**Medallion Architecture pattern**](/guide/projectAspects/medallionArch) (Bronze → Silver → Gold), which brings clarity and governance to data processing.
 
 | Layer   | Description                                            | Value Delivered |
 |---------|--------------------------------------------------------|-----------------|
@@ -45,7 +45,7 @@ One of the first improvements was organizing the S3 storage using the **Medallio
 
 ## Fault Tolerance with Retry Logic
 
-To increase system robustness, all external operations were made fault-tolerant using a **configurable retry mechanism**. Instead of failing on the first error, each interaction now attempts to recover from transient issues gracefully.
+To increase system robustness, all external operations were made fault-tolerant using a [**configurable retry mechanism**](/guide/projectAspects/error-handling). Instead of failing on the first error, each interaction now attempts to recover from transient issues gracefully.
 
 This retry system is controlled via two environment variables:
 
@@ -66,7 +66,7 @@ Where Retry Logic Is Applied
 
 ## Structured Logging for Observability
 
-As the architecture evolved, it became essential to maintain clear visibility across the growing number of moving parts. To support this, structured and centralized logging was implemented throughout all Lambda functions.
+As the architecture evolved, it became essential to maintain clear visibility across the growing number of moving parts. To support this, structured and centralized logging [**logging**](/guide/projectAspects/logging) was implemented throughout all Lambda functions.
 
 Logs are emitted using Python’s built-in logging system:
 
@@ -108,7 +108,7 @@ Keeps data **fresh and up-to-date**, enabling near-real-time insights with zero 
 
 ## Infrastructure as Code (IaC) with AWS SAM
 
-All infrastructure — from Lambda functions to queues and permissions — is defined using **AWS SAM (Serverless Application Model)**.
+All infrastructure — from Lambda functions to queues and permissions — is defined using [**AWS SAM (Serverless Application Model)**](/guide/projectAspects/iac).
 
 - YAML-based templates.  
 - Full reproducibility of environments.  
@@ -135,7 +135,7 @@ Access to the OMDb API required storing a private key securely. Instead of hardc
 
 ## Automated Testing Strategy
 
-To ensure the pipeline remains reliable, maintainable, and safe to evolve, a robust testing strategy was implemented across two levels:
+To ensure the pipeline remains reliable, maintainable, and safe to evolve, a robust [**testing strategy**](/guide/projectAspects/testing) was implemented across two levels:
 
 ### Unit Tests
 
